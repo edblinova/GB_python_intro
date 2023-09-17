@@ -24,19 +24,12 @@ from helpers.check_input import input_pos_int, input_int
 
 def main():
 
-    N = -1
-    while N == -1:
-        N = input_pos_int(what_quant='кустов черники', 
-                          condition=2)
-    
+    N = input_pos_int(what_quant='кустов черники', condition=2)
     total = []
 
     for i in range(N):
         
-        new_el = 0.5
-        while new_el == 0.5:
-            new_el = input_int(f'элемент количество ягод на {i+1}-м кусте')
-        
+        new_el = input_int(f'элемент количество ягод на {i+1}-м кусте')
         total.append(new_el)
     
     result = []

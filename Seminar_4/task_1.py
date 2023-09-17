@@ -17,29 +17,17 @@ def main():
     n_set = set()
     m_set = set()
 
-    n = -1
-    while n == -1:
-        n = input_pos_int('элементов первого множества')
-    
-    m = -1
-    while m == -1:
-        m = input_pos_int('элементов второго множества')
+    n = input_pos_int('элементов первого множества')
+    m = input_pos_int('элементов второго множества')
 
     for _ in range(n):
         
-        new_el = 0.5
-        while new_el == 0.5:
-            new_el = input_int('элемент первого множества')
-        
+        new_el = input_int('элемент первого множества')
         n_set.add(new_el)
-
     
     for _ in range(m):
         
-        new_el = 0.5
-        while new_el == 0.5:
-            new_el = input_int('элемент второго множества')
-        
+        new_el = input_int('элемент второго множества')
         m_set.add(new_el)
     
     result = sorted(n_set.intersection(m_set))
